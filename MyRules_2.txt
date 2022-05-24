@@ -1,0 +1,98 @@
+Программа тестирования первой недели.
+*Креды для авторизации на zone51.
+guest@unifun.com
+guestpass
+
+Этап 1.
+
+1.Установка Ubuntu на персональный PC  и настройка .
+
+Этап 2.
+MYSQL Percona
+Изучить что такое MYSQL Percona, для чего используется.
+Установка и конфигурация MYSQL Percona 5.7 , по предоставленной инструкции.
+https://zone51.unifun.com/ru/soft_installation/Mysql57
+
+Установка Python + modules
+Установка и конфигурация Python + modules, по предоставленной инструкции.
+https://zone51.unifun.com/ru/soft_installation/python
+
+Установка Nginx и первоначальная настройка
+Изучить что такое Nginx, для чего используется.
+Установка и конфигурация Nginx, по предоставленной инструкции.
+https://zone51.unifun.com/ru/soft_installation/nginx
+
+Установка Apache2 и первоначальная настройка
+Изучить что такое Apache2 , для чего используется.
+Установка и конфигурация Apache2, по предоставленной инструкции.
+https://zone51.unifun.com/ru/soft_installation/nginx
+
+Установка PHP, PHP-FPM , PHP модулей и первоначальная настройка
+Изучить что такое PHP-FPM, для чего используется.
+Установка PHP и конфигурация PHP-FPM, по предоставленной инструкции.
+https://zone51.unifun.com/ru/soft_installation/php-fpm
+
+Установка и настройка KeyDB
+Изучить что такое keyDB, для чего используется.
+Установка и конфигурация KeyDB, по предоставленной инструкции.
+https://docs.keydb.dev/docs/ppa-deb/
+
+Установка Kannel на сервере и первоначальная настройка
+Изучить что такое kannel, для чего используется.
+Установка и конфигурация kannel, по предоставленной инструкции.
+https://zone51.unifun.com/ru/soft_installation/kannel
+
+Установка Asterisk 16 настройка модулей и первоначальная настройка.
+Изучить что такое asterisk, для чего используется.
+Установка и конфигурация asterisk по предоставленной инструкции.
+https://zone51.unifun.com/ru/soft_installation/asterisk
+
+Установка GIT и первоначальная настройка.
+
+Изучить что такое GIT, для чего используется.
+Инструкция по настройке.
+1) Зарегистрироваться на github.com (или войти, если есть учётка) 
+
+2) Создать пустой репозиторий с именем test_unifun 
+
+3) Сгенерировать новый токен доступа на https://github.com/settings/tokens и сохранить его. (Если учётка и токен уже есть, можно пропустить этот шаг) 
+
+4) На локальном компьютере создать пустой репозиторий и запустить его на ваш тестовый репозиторий     
+* создать в любом месте каталог, назвать его test_unifun     
+* открыть терминал и зайти в этот каталог     
+* выполнить команды:git
+* На этом этапе настроить локального юзера: git config --global user.name "__ВАШЕ_ИМЯ__" git config --global user.email "__ВАШ_E-MAIL__"     
+* Выполнить команды: 
+      git add README.md 
+      git commit -m "first commit" 
+      git branch -M main 
+      git remote add origin https://github.com/StashVenrici/test.git       
+      git push -u origin main 
+(Запросит логин/пароль GitHub, ввести ваш логин и токен доступа) 
+
+5) Создайте несколько текстовых файлов в локальном репозитории с любым содержимым
+
+6) Добавьте файлы в коммит с комментарием "second commit" и сделайте пуш в удалённый репозиторий: 
+git add * 
+git commit -m "second commit" 
+git push 
+
+7) Создайте новую ветку и переключитесь на неё: 
+git branch test_branch 
+git checkout test_branch
+
+
+
+8) Создайте несколько текстовых файлов в локальном репозитории с любым содержимым
+
+9) Добавьте файлы в коммит с сообщением "added new branch" git commit -m "added new branch" 
+10) Запушить новую ветку на удалённый репозиторий: git push --set-upstream origin test_branch 
+11) Переключится на ветку main 
+git checkout main 
+
+12) Объединить ветки: git merge test_branch
+
+
+Изучить что такое logrotate и как настраивается.
+
+
